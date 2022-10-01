@@ -1,0 +1,111 @@
+.profile{
+    float: top;
+    width: 100%;
+    border: 0px solid white;
+    border-radius: 20px;
+    background-color:white;
+    box-shadow: 1px 1px 12px #555;
+    text-align: center;
+}
+
+img {
+	max-width: 970px;
+	max-height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo{
+	position: relative; 
+	top: -50px; 
+    text-align:left;
+    width:200px; 
+    height: 200px;
+    clip-path:ellipse(50% 50%);
+}
+
+label
+{
+    padding-right: 10px;
+    font-size: 1rem;
+}
+
+.question{
+    font-size: 12px;
+}
+
+.reponse{
+    
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.reponse1{
+    
+    display: flex;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.questionreponse{
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sondage{
+    width: 60%;
+    float: right;
+    padding : 10px;
+}
+
+input 
+{
+display:block;
+text-align:center;
+vertical-align:middle;
+background-color: black;
+color:white;
+text-decoration:none;
+}
+
+
+/* responsive de flo */
+@media only screen and (max-width: 1200px){
+ .photo{
+    height: 150px;
+    width: 150px;
+ }
+}
+
+@media only screen and (max-width: 992px){
+ .photo{
+    height: 125px;
+    width: 125px;
+ }
+}
+
+@media only screen and (max-width: 768px){
+ .photo{
+    height: 175px;
+    width: 175px;
+ }
+}
+
+#messondagesbis:hover{
+    background-color:#DFF2FF;
+    color:deepskyblue;
+    border-color:deepskyblue;
+}
+
+#sondagesaimesbis:hover{
+    background-color:#DFF2FF;
+    color:deepskyblue;
+    border-color:deepskyblue;
+}

@@ -1,0 +1,348 @@
+body {
+    background-color: white;
+    margin: 3rem;
+}
+
+.choix {
+    display: flex;
+    color : black;
+    font-size: 20px;
+}
+
+.choix > h3 {
+    flex: 1;
+}
+
+#choix1 {
+    postion: absolute;
+    z-index: 10;
+}
+
+#choix2 {
+    postion: absolute;
+    z-index: 10;
+}
+
+.plus {
+    padding-top: 23px;
+    margin-right: 5px;
+}
+
+#likebuttoncomment{
+    float: right;
+    margin-top: 11px;
+    cursor: pointer;
+}
+
+#likedbuttoncomment{
+    float: right;
+    margin-top: 11px;
+    cursor: pointer;
+}
+
+div.stats ul { list-style: none; }
+div.stats .percent {
+
+    display: block; 
+    height: 25px;
+    line-height: 1.5em;
+    margin: 5px 0px;
+    padding: 0 5px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-family: monospace; 
+    -moz-border-radius: 5px;
+    border-bottom: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    cursor: default;
+    border-radius: 20px;
+}
+
+.v100 { background: #25fde9; width: 90%; }
+.v90 { background: #25fde9; width: 90%; }
+.v80 { background: #25fde9; width: 80%; }
+.v70 { background: #25fde9; width: 70%; }
+.v60 { background: #25fde9; width: 60%; }
+.v50 { background: #25fde9; width: 50%; }
+.v40 { background: #25fde9; width: 40%; }
+.v30 { background: #25fde9; width: 30%; }
+.v20 { background: #25fde9; width: 20%; }
+.v10 { background: #25fde9; width: 10%; }
+.v0 { background: #25fde9; width: 10%; }
+
+.choix > input{
+    width: 50%;
+    height: 125px;
+    border: 2px solid black;
+    overflow: auto;
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word; 
+}
+
+a{
+    color : black;
+}
+
+a:focus{
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+#logoutButton {
+    outline: none;
+}
+
+.sondage {
+    background: #ddd;
+    text-align: center;
+    margin:auto;
+}
+
+.choix input:hover {
+    background: #ccc;
+    border:0;
+}
+
+.popup{
+    width: 20%;
+    position: fixed;
+    top: 30px;
+    right: 0px;
+    padding: 10px;
+}
+
+.xp{
+    width: 20%;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    padding: 10px;
+}
+
+.page-header{
+    float : left;
+    width: 20%;
+    height: 400px;
+    padding: 10px;
+}
+
+.page-header2
+{
+    float : right;
+    width: 20%;
+    height: 400px;
+    padding: 10px;
+}
+
+
+
+
+/*animation 1er bouton*/
+.glow-on-hover {
+    width: 125px;
+    height: 25px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/*Fin animation 1er bouton */
+
+
+/*Style des div*/
+
+#tv {
+    background: black;
+    border-radius: 10px ;
+    color: white;
+    transition: all .4s ease;
+    padding: 1px 5px 10px 5px;
+}
+
+.far,.fas{
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+}
+
+.content-commentaire{
+    margin-left:2.5px;
+}
+
+.content-commentaire .first-answer{
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+.first-answer{
+    width: 93%;
+}
+
+.content-commentaire img{
+    clip-path:ellipse(50% 50%);
+    height: 32px;
+    width: 32px;
+    margin-right: 5px;
+}
+
+.subrepdisplay img{
+    height: 24px !important;
+    width: 24px !important;
+}
+
+.sub-rep{
+    color: rgba(22, 24, 35, 0.5);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+.sub-rep:hover{
+    text-decoration: underline;
+}
+
+.content-commentaire .profilename{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.content-commentaire .profilename:hover{
+    text-decoration: underline !important;
+}
+
+.header-comment p{
+    margin-left:2.5px;
+}
+
+.header-comment .fas{
+    cursor: pointer;
+}
+
+.header-comment .far{
+    cursor: pointer;
+}
+
+.share{
+    display: inline-flex;
+}
+
+.share .fab{
+    margin-right: 5px;
+}
+
+#commentaire{
+    display: none;
+    max-height: 250px;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.form-comment{
+    margin-left: 18px;
+    margin-top: 5px;
+}
+
+.btncomment{
+    height: 90%;
+    margin-top: 5px;
+}
+
+#publiercommentaire{
+    display: none;
+}
+
+.inputchoix{
+    width: 100%;
+    height: 100%;
+}
+
+.formchoix{
+    display: flex;
+    width: -webkit-fill-available;
+    width:-moz-available;
+    height:150px;
+}
+
+.fa-arrow-circle-right{
+    cursor: pointer;
+}
+
+
+/* responsive de flo */
+@media only screen and (max-width: 768px){
+ .choix{
+    display: block !important;
+ }
+ .sondage{
+    width: 250px;
+    margin-left: -50px;
+ }
+ .col-12{
+    width: 73%;
+ }
+}
+
+
+
+/*Fin style div*/
